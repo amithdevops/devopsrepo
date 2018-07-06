@@ -1,0 +1,12 @@
+git --version  		//to know the present version of the git
+git clone https://github.com/amithdevops/devopsrepo.git     //to copy the repository from cdentral to the local for the first time
+git add *  or  git add a.txt  //to add the files to staging area
+git commit -m "message" 	// to add files to local repository from staging area
+git push origin master    // to add files from local to central repository! to move changes from local to central repository
+git pull origin master	// to copy files from central repository to local repository
+origin     // alias name for your git repository url
+master	// it is a branch name ! master is the default branch/top level branch created when we create a repository
+git status	// it will show the status of the files or working tree
+git log (or) git log a.txt 	//it shows all commits we have done
+git checkout commit-id file name     // to rollback a file to previous commit related to commit id  
+ 
