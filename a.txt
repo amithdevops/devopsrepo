@@ -1,2 +1,0 @@
-this is my first line in a.txt
-this is the second line in a.txt
