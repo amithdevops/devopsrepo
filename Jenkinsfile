@@ -10,7 +10,7 @@ pipeline {
               steps {
                script {
                  def now = new Date()
-                 println now.format("yyMMdd.HHmm", TimeZone.getTimeZone('UTC'))
+                 println now.format("yy/MM/dd.HH.mm", TimeZone.getTimeZone('UTC'))
     }
   } 
 }
