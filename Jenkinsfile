@@ -4,7 +4,7 @@ pipeline {
             stage('Hello') {
                steps {
                   echo 'Hrello Jenkins'
-                   date
+                  date +'%Y-%m-%d'
                }
             }    
         }
