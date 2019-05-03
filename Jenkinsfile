@@ -1,7 +1,10 @@
 pipeline {
     agent any
-            steps {
-                echo 'Running build automation'
-               
-            }
+         stages {
+            stage('Hello') {
+               steps {
+                  echo 'Hrello Jenkins'
+               }
+            }    
         }
+}
