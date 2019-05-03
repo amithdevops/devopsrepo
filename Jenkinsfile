@@ -4,8 +4,15 @@ pipeline {
             stage('Hello') {
                steps {
                   echo 'Hrello Jenkins'
-                  echo "TimeStamp: ${Util.getTimeSpanString(System.currentTimeMillis())}"
                }
-            }    
-        }
+            }
+            stage('Foo') {
+              steps {
+               script {
+                 def now = new Date()
+                 println now.format("yyMMdd.HHmm", TimeZone.getTimeZone('UTC'))
+    }
+  } 
+}
+         }
 }
