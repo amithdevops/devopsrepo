@@ -6,7 +6,7 @@ pipeline {
                   echo 'Hrello Jenkins'
                }
             }
-            stage('Foo') {
+            stage('Timestamp') {
               steps {
                script {
                  def now = new Date()
@@ -14,5 +14,18 @@ pipeline {
     }
   } 
 }
+             stage("Evaluate Master") {
+               when {
+                // skip this stage unless on Master branch
+                branch "master"
+               }
+              steps {
+                 echo "This is master Branch"
+                }
+             }
+             
+             
+             
+             
          }
 }
