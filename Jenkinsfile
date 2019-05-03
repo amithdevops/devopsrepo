@@ -4,7 +4,7 @@ pipeline {
             stage('Hello') {
                steps {
                   echo 'Hrello Jenkins'
-                  date 
+                  echo "TimeStamp: ${Util.getTimeSpanString(System.currentTimeMillis())}"
                }
             }    
         }
