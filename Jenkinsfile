@@ -23,6 +23,25 @@ pipeline {
                  echo "This is master Branch"
                 }
              }
+             stage("Evaluate dev") {
+               when {
+                // skip this stage unless on Master branch
+                branch "dev"
+               }
+              steps {
+                 echo "This is dev Branch"
+                }
+             }
+             
+             stage("Evaluate f1") {
+               when {
+                // skip this stage unless on Master branch
+                branch "f1"
+               }
+              steps {
+                 echo "This is f1 Branch"
+                }
+             }
              
              
              
